@@ -1,0 +1,165 @@
+/* Grundläggande stilar för hela sidan */
+body {
+  background-color: #f5f5f5;
+  color: #333;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 2rem;
+}
+
+/* Stilar för rubriker */
+h1 {
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+h2, h3 {
+  text-align: center;
+}
+
+/* Header container för rubriken och darkmode-knappen */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Rubrik i header */
+.header-container h1 {
+  margin-bottom: 0;
+}
+
+/* Container för darkmode-knappen */
+.darkmode {
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Darkmode-knappen */
+.darkmode button {
+  padding: 6px 12px;
+  font-size: 0.9rem;
+}
+
+/* Container för inmatningsfält och knapp */
+.input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 1.5rem;
+  flex-wrap: wrap;
+}
+
+/* Inmatningsfält */
+input {
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  padding: 8px 12px;
+  flex: 1;
+  min-width: 120px;
+}
+
+/* Knappar */
+button {
+  background-color: #3498db;
+  border: none;
+  border-radius: 4px;
+  color: white;
+  cursor: pointer;
+  padding: 8px 16px;
+  transition: background-color 0.2s;
+}
+
+/* Knappar vid hover */
+button:hover {
+  background-color: #2980b9;
+}
+
+/* Felmeddelanden */
+#error {
+  color: #e74c3c;
+  font-weight: bold;
+  min-height: 20px;
+}
+
+/* Osorterade listor */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+/* Listpost för varje måltid */
+li {
+  background-color: white;
+  border-radius: 4px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+  padding: 12px;
+  align-items: center;
+}
+
+/* Ta bort-knappen i listan */
+li button {
+  background-color: #e74c3c;
+  font-weight: bold;
+  padding: 4px 8px;
+  min-width: 30px;
+}
+
+/* Ta bort-knappen vid hover */
+li button:hover {
+  background-color: #c0392b;
+}
+
+/* Mörkt tema för hela sidan */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Rubriker i mörkt tema */
+body.dark-mode h1 {
+  color: #ecf0f1;
+}
+
+/* Inmatningsfält i mörkt tema */
+body.dark-mode input {
+  background-color: #2c2c2c;
+  color: #ffffff;
+  border-color: #555;
+}
+
+/* Knappar i mörkt tema */
+body.dark-mode button {
+  background-color: #2980b9;
+  color: #ffffff;
+}
+
+/* Knappar vid hover i mörkt tema */
+body.dark-mode button:hover {
+  background-color: #1a6f99;
+}
+
+/* Listposter i mörkt tema */
+body.dark-mode li {
+  background-color: #2c2c2c;
+  box-shadow: 0 1px 3px rgba(255, 255, 255, 0.1);
+}
+
+/* Ta bort-knappar i mörkt tema */
+body.dark-mode li button {
+  background-color: #c0392b;
+}
+
+/* Ta bort-knappar vid hover i mörkt tema */
+body.dark-mode li button:hover {
+  background-color: #a93226;
+}
+
+/* Felmeddelanden i mörkt tema */
+body.dark-mode #error {
+  color: #ff6b6b;
+}

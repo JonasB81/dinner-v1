@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Måltidshanterare</title>
+    <link rel="stylesheet" href="main.css" />
+    <meta charset="utf-8">
+  </head>
+  <body>
+    <div class="header-container">
+      <h1 id="heading">Måltidsplanerare</h1>
+      <div class="darkmode">
+        <button id="dm-toggle">Darkmode</button>
+      </div>
+    </div> 
+    
+    <!-- Formulär för att lägga till nya måltider -->
+    <div class="input-container">
+      <input id="dish" type="text" placeholder="Vad ska vi äta?"/>
+      <input id="date" type="date" placeholder="Välj datum"/>
+      <button id="submit">Lägg till</button>
+    </div>
+    
+    <!-- Visning av eventuella felmeddelanden -->
+    <p id="error"></p>
+    
+    <!-- Lista över måltider -->
+    <H2 id="mealPlanTitle">Vad vi har planerat att äta</H2>
+    
+    <ul id="meals">
+      <li id="loading">Laddar måltider...</li>
+    </ul>
+    <h3>* bocka i när vi har serverat maten</h3>
+    <script src="main.js"></script>
+  </body>
+</html>
